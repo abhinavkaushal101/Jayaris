@@ -1,0 +1,226 @@
+/* --- CONTACT PAGE CONTAINER --- */
+.contact-page-container {
+    background-size: cover;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.contact-form-title{
+    color: #AAF6FB !important;
+}
+.contact-label{
+    color: #E3FFF8 !important;
+}
+
+/* --- FORM CARD --- */
+.contact-form-card {
+ width: 90%;
+  max-width: 36rem; /* Reduced from 48rem */
+  margin: 3.5rem auto;
+  height: auto; /* Let content define it */
+  background: rgba(17, 15, 15, 0.024);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(191, 183, 183, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  position: relative;
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.2),
+    0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title scales fluidly */
+.contact-form-title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Form Row */
+.contact-form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* --- CLOSE BUTTON --- */
+.contact-close-button-wrapper {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.75rem;
+    color: #ffffffcc;
+    transition: all 0.3s ease;
+}
+
+.contact-close-button-wrapper:hover .contact-close-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.contact-close-button {
+    padding: 0.4rem;
+}
+
+/* --- HEADINGS --- */
+.contact-form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+    text-align: center;
+    color: #ffffffee;
+}
+
+.contact-submission-message {
+    text-align: center;
+    padding: 2rem;
+    color: #22c55e;
+    font-size: 1.25rem;
+}
+
+/* --- FORM LAYOUT --- */
+.contact-form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* On medium screens and above, arrange side-by-side */
+@media (min-width: 768px) {
+  .contact-form-row {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .contact-form-group {
+    flex: 1;
+  }
+}
+
+/* Input fields */
+.contact-input {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+/* Textarea */
+.contact-textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+/* Submit Button */
+.contact-submit-button {
+  width: 100%;
+  max-width: 200px;
+  margin: 1rem auto 0;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+}
+
+/* Add hover for button */
+.contact-submit-button:hover {
+  background-color: #002244;
+}
+
+/* --- FORM ELEMENTS --- */
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #f3f4f6;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+.contact-input:hover{
+    background: rgba(34, 34, 34, 0.245);
+}
+
+.contact-input::placeholder {
+    color: #e2e8f0;
+}
+
+.contact-input:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.contact-textarea {
+    resize: vertical;
+}
+
+/* --- SUBMIT BUTTON --- */
+.contact-submit-button-wrapper {
+    text-align: center;
+}
+
+.contact-submit-button {
+    padding: 0.75rem 1.5rem;
+    background: #C1E8FF;
+    color: rgb(17, 7, 50);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-submit-button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* --- GLOBAL RESET --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f1a;
+    color: white;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}

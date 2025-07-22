@@ -1,0 +1,358 @@
+.about-hero {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('./image/aboutbg.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 5vw;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* aligns text-box to the right */
+}
+
+.text-box {
+  max-width: 650px;
+  text-align: right;
+}
+
+
+.hero-heading {
+  font-size: 3rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.jayaris-highlight {
+  font-weight: 700;
+  color: #bde6ff; /* you can change to your desired color */
+}
+
+.hero-description {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-style: italic;
+  background: linear-gradient(to right, #b5a5fc, hwb(230 64% 0%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.our-mission-section {
+  padding: 80px 40px;
+  background: linear-gradient(to bottom, #000000, #111b64);
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.our-mission-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.mission-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.mission-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.mission-paragraph {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.mission-points {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  font-size: 16px;
+}
+
+
+.our-vision-section {
+  height: 80vh !important;
+  padding: 80px 40px;
+  background: linear-gradient(to bottom, #111b64, #060638);
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.our-vision-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.vision-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.vision-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.vision-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.vision-paragraph {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.vision-points {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  font-size: 16px;
+}
+
+
+.our-values-section {
+  background: linear-gradient(to bottom, #060638, #040920);
+  padding: 80px 40px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.values-heading {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.zigzag-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns for zig-zag gaps */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  min-width: 180px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+/* Zig-zag card placement */
+.zigzag-grid .value-card:nth-child(1) {
+  grid-column: 1;
+}
+.zigzag-grid .value-card:nth-child(2) {
+  grid-column: 3;
+}
+.zigzag-grid .value-card:nth-child(3) {
+  grid-column: 5;
+}
+.zigzag-grid .value-card:nth-child(4) {
+  grid-column: 2;
+}
+.zigzag-grid .value-card:nth-child(5) {
+  grid-column: 4;
+}
+.zigzag-grid .value-card:nth-child(6) {
+  grid-column: 3;
+}
+
+/* Hover neon effect */
+.value-card:hover {
+  border-color: #3d7bd8;
+  box-shadow: 0 0 15px #1f6dda88, 0 0 30px #00f9ff55;
+  transform: translateY(-5px) scale(1.03);
+  cursor: pointer;
+}
+
+/* GLOBAL MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .about-hero {
+    padding: 0 4vw;
+  }
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  .hero-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .zigzag-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zigzag-grid .value-card {
+  grid-column: auto !important; /* Reset any specific grid positioning */
+  width: 90%;
+}
+
+  .about-hero {
+    justify-content: center;
+    padding: 0 3vw;
+    text-align: center;
+  }
+
+  .overlay {
+    justify-content: center;
+  }
+
+  .text-box {
+    text-align: center;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .our-mission-container,
+  .our-vision-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mission-image img,
+  .vision-image img {
+    max-width: 100%;
+    width: 90%;
+  }
+
+  .mission-paragraph,
+  .vision-paragraph {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .mission-heading,
+  .vision-heading {
+    font-size: 28px;
+  }
+
+  .mission-points,
+  .vision-points {
+    font-size: 15px;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 8px;
+  }
+
+  .zigzag-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .value-card {
+    min-width: unset;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .values-heading {
+    font-size: 30px;
+  }
+
+  .our-values-section {
+    padding: 60px 20px;
+  }
+
+  .our-mission-section,
+  .our-vision-section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 1.6rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .mission-heading,
+  .vision-heading,
+  .values-heading {
+    font-size: 24px;
+  }
+
+  .mission-paragraph,
+  .vision-paragraph {
+    font-size: 14px;
+  }
+
+  .value-card {
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+}
