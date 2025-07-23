@@ -27,6 +27,8 @@ import Navbar from './components/Navbar';
 import TermsAndConditions from './components/TermsAndConditions';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import CookiePolicy from './components/CookiePolicy';
+import image from './image/bg.mp4'
+
 const points = ["Global Delivery", "Top Talent", "Agile Execution", "Post-Delivery Support"];
 
 const feedbackList = [
@@ -158,17 +160,29 @@ const cardVariants = {
   playsInline
   className="hero-bg-video"
 >
-  <source src={bgVideo} type="video/mp4" />
+  <source src={image} type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
   {/* content */}
-  <Container>
+  {/* <Container>
     <Row className="text-center justify-content-center">
       <Col md={10} data-aos="fade-up">
         <h1 className="hero-title fade-in">
           Universal-Standard Web & App Development Engineered by World’s Brightest Minds
         </h1>
+        
+      </Col>
+    </Row>
+  </Container> */}
+  <Container>
+  
+    <Row className="text-center justify-content-center">
+      <Col md={10} data-aos="fade-up">
+        <h1 className="hero-title fade-in">
+         <span style={{color:"#F49A0C", fontWeight:'bolder'}}> Universal</span>-Standard Web & App Development Engineered by World’s <span style={{color:"#F49A0B"}}>Brightest</span> Minds
+        </h1>
+        <p className="headingparagraph" style={{width:"55%", margin:'2% auto',cursor: 'pointer'}}>We simplify your digital presence with secure, scalable solutions <span style={{color:'#F49A0B'}}>tailored to your needs.</span> </p>
         
       </Col>
     </Row>
@@ -183,8 +197,8 @@ const cardVariants = {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
   >
-    <h2 className="specialization-heading">
-      <span className="animated-text">What Sets Us Apart?</span>
+    <h2 className="specialization-heading">  
+      <span className="animated-text">What Sets <span style={{color:'#fcb900'}}>Us Apart?</span></span>
     </h2>
   </motion.div>
 
@@ -343,7 +357,7 @@ const cardVariants = {
         transition={{ duration: 0.8, delay: 0.4 + index * 0.2 }}
       >
         <img src={feedback.image} className="client-avatar" alt="client" />
-        <h5>{feedback.name}</h5>
+        <h5 className="client-avatar-blurpart">{feedback.name}</h5>
         <small>{feedback.role}</small>
         <div className="stars">
           {Array(5).fill("★").map((s, i) => (

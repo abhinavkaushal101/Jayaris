@@ -173,6 +173,9 @@
   transition:all .5s ease-in-out;
 
 }
+.Slidering{
+  display: none;
+}
 @media (max-width:768px) {
   .quality-box{
     width: 100% !important;
@@ -180,8 +183,12 @@
 
   }
   .quality-down{
+    display: none;
     flex-direction: column;
     width: 100%;
+  }
+  .Slidering{
+    display: block;
   }
   .quality-wrapper {
   width: 90%;

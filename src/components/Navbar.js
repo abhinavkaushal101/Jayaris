@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Container, Nav, Button, Dropdown, Navbar as BootstrapNavbar } from "react-bootstrap";
 import "./Navbar.css";
 import { Link, NavLink } from 'react-router-dom';
-import logoImage from '../image/logo.png';
+import logoImage from '../image/updatelogo.png';
 
 function Navbar() {
   // State to manage the expanded/collapsed state of the navbar
@@ -38,7 +38,7 @@ function Navbar() {
               className="d-inline-block align-top me-2"
               alt="Jayaris Logo"
             />
-            <span className="jayaris-gradient-text">JAYARIS</span>
+            <span className="jayaris-gradient-text"><span>JAYA</span>RIS</span>
           </BootstrapNavbar.Brand>
 
           <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" /> {/* Keep this as is */}

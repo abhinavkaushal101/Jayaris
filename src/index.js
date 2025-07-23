@@ -5,7 +5,7 @@ import App1 from "./App1"; // assuming App1 is your main app file
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter basename="/jayaris-final">
+  <BrowserRouter basename="/">
     <App1 />
   </BrowserRouter>
 );

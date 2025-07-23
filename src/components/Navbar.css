@@ -29,18 +29,20 @@ body, html {
   color: #606dc5 !important;
 }
 .jayaris-gradient-text {
-  background: linear-gradient(90deg, 
-    #ec008c,  /* pinkish magenta */
-    #00b4d8,  /* teal blue */
-    #32cd32,  /* lime green */
-    #fcb900,  /* yellow-orange */
-    #ff5722   /* orange red */
-  );
+  /* background: linear-gradient(-90deg, 
+  #F49A0C,
+    #ec008c, 
+    #00b4d8 ,
+    #fcb900,  
+    #ff5722   
+  ); */
+  background: linear-gradient(#F49A0C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; 
   text-fill-color: transparent;
   font-weight: 600;
+  /* color:transparent; */
   display: inline-block;
 }
 .signup-btn {

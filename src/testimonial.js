@@ -4,14 +4,17 @@ import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 import './testimonial.css'; // Create this new CSS file for testimonial specific styles
 import { Link } from 'react-router-dom';
-import  { useRef, useLayoutEffect, useCallback, useMemo } from "react"; // Import useEffect
+import { useRef, useLayoutEffect, useCallback, useMemo } from "react"; // Import useEffect
 import { Container, Nav, Button, Dropdown } from "react-bootstrap";
 import client1 from './image/client1.jpeg';
+import vide from './image/vide.mp4';
 
 import client2 from './image/client2.jpeg';
 import client3 from './image/client3.jpeg';
-import Footer from './components/Footer'; 
-import Navbar from './components/Navbar'; 
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Slider from './Slider'
+
 // Data for the testimonials
 const feedbackList = [
   {
@@ -56,11 +59,11 @@ const Testimonial = () => {
 
   return (
     <>
-     <Navbar/>
+      <Navbar />
 
-    <motion.section className="testimonial-glass-section" id="testimonials">
-      {/* Central Glass Message Box */}
-      {/* <motion.div
+      <motion.section className="testimonial-glass-section" id="testimonials">
+        {/* Central Glass Message Box */}
+        {/* <motion.div
         className="glass-message-box"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -75,55 +78,88 @@ const Testimonial = () => {
         />
       </motion.div> */}
 
-<div
-  style={{
-    // backgroundImage: 'url("/Testibg.jpeg")',
-    // backgroundPosition: 'center',
-    // backgroundRepeat: 'no-repeat',
-    // backgroundSize: 'cover',
-  }}
-  className="quality-section"
->
-  <div className="quality-wrapper">
-    <div className="quality-top">
-      <h1 className="quality-heading">We Provide Best Quality</h1>
-      <button className="quality-button">
-        <a
-          href="https://riyakaushal321.wixstudio.com/my-site-10"
-          target="_blank"
-          rel="noreferrer"
+        <div
+          style={{
+            // backgroundImage: 'url("/Testibg.jpeg")',
+            // backgroundPosition: 'center',
+            // backgroundRepeat: 'no-repeat',
+            // backgroundSize: 'cover',
+          }}
+          className="quality-section"
         >
-          View
-        </a>
-      </button>
-    </div>
-    <div className="quality-down">
-      {[
-        "https://static.wixstatic.com/media/0bb83114d47e4ca0a9fa5a9ea6a16530.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain%20Landscape.jpg",
-        "https://static.wixstatic.com/media/11062b_2acbd6eaea3d43b98b40d28b8838464e~mv2.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain.jpg",
-        "https://static.wixstatic.com/media/11062b_4c10b593035143bda767c755c09bb406~mv2.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain.jpg",
-        
-      ].map((img, i) => (
-        <div className="quality-box" key={i}>
-          <a
-            href="https://riyakaushal321.wixstudio.com/my-site-10"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={img} alt={`Bali ${i}`} />
-          </a>
-          <h1 className="quality-location">
-            Bali, Indonesia <br />
-            <span>$300</span>
-          </h1>
-        </div>
-      ))}
-    </div>
-  </div>
-  </div>
+          <div className="quality-wrapper">
+            <div className="quality-top">
+              <h1 className="quality-heading">We Provide Best Quality</h1>
+              <button className="quality-button">
+                <a
+                  href="https://riyakaushal321.wixstudio.com/my-site-10"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View
+                </a>
+              </button>
+            </div>
+            <div className='Slidering'><Slider /></div>
+            <div className="quality-down">
+              {[
+                "https://static.wixstatic.com/media/0bb83114d47e4ca0a9fa5a9ea6a16530.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain%20Landscape.jpg",
+                "https://static.wixstatic.com/media/11062b_2acbd6eaea3d43b98b40d28b8838464e~mv2.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain.jpg",
+                "https://static.wixstatic.com/media/11062b_4c10b593035143bda767c755c09bb406~mv2.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain.jpg",
 
-      {/* Cards fade in one by one */}
-      <div className="client-feedback-grid">
+              ].map((img, i) => (
+                <div className="quality-box" key={i}>
+                  <a
+                    href="https://riyakaushal321.wixstudio.com/my-site-10"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={img} alt={`Bali ${i}`} />
+                  </a>
+                  <h1 className="quality-location">
+                    Bali, Indonesia <br />
+                    {/* <span>$300</span> */}
+                  </h1>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="internship-box">
+          <motion.div
+            initial={{ opacity: 0, x: -50, y: 20 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="internship-text"
+          >
+            <h1 className="internship-title">We Provide Best Quality</h1>
+            <div>
+              <ul className="internship-list">
+                <li>WordPress Intern (Theme Customization & Plugin Use)</li>
+                <li>Headless CMS Intern (Strapi, Contentful Basics)</li>
+                <li>CMS Support Intern (Content Structuring & QA)</li>
+              </ul>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50, y: 20 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="internship-image-container"
+          >
+            {/* <img
+                                        className="internship-image"
+                                        src="https://images.pexels.com/photos/265667/pexels-photo-265667.jpeg"
+                                        alt=""
+                                    /> */}
+            <video  className="internship-image" autoPlay loop muted><source src={vide} /></video>
+
+          </motion.div>
+          {/* </div> */}
+        </div>
+        {/* Cards fade in one by one */}
+        {/* <div className="client-feedback-grid">
         {showTestimonialCards && feedbackList.map((feedback, index) => (
           <motion.div
             key={index}
@@ -143,9 +179,9 @@ const Testimonial = () => {
             <p className="feedback-text">{feedback.feedback}</p>
           </motion.div>
         ))}
-      </div>
-    </motion.section>
-    <Footer />
+      </div> */}
+      </motion.section>
+      <Footer />
     </>
   );
 };

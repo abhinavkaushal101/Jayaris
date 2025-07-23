@@ -56,7 +56,26 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%;
+  height: 100%; */
+  /* object-fit: cover; */
+  /* filter: blur(1px) brightness(0.9); Blur + Darken */
+  /* z-index: -2; */
+
+
 }
+/* Overlay (dark layer for contrast) */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.5);
+  /* z-index: -1; */
+}
+
 
 .content-wrapper {
     position: absolute;
@@ -72,7 +91,7 @@
 }
 
 .content-wrapper .heading {
-    font-size: 1.5 rem; /* default */
+    font-size: 3rem; /* default */
     font-weight: bold;
 }
 @media (max-width:768px) {
@@ -83,7 +102,13 @@
     }
     .content-wrapper{
         width: 100% !important;
-        
+        padding: 0% !important;        
+    }
+    .content-wrapper .heading{
+        font-size: 1.6rem;
+    }
+    .paragraph{
+        width: 90% !important;
     }
 }
 @media (min-width: 768px) {
@@ -142,8 +167,8 @@
 
 @media (min-width: 768px) {
     .heading-text {
-        font-size: 2.25rem; /* md:text-4xl */
-    padding: 2% 0;
+        /* font-size: 2.25rem; md:text-4xl */
+    /* padding: 2% 0; */
 
     }
 }
@@ -728,6 +753,9 @@
     .team-perks-list li{
         font-size: 0.7rem;
     }
+    .apply-now-btn{
+        margin: 5% auto;
+    }
 }
 
 .team-perks-image-container {
@@ -750,4 +778,92 @@
   width: 100%;
   height: auto;
   display: block;
+}
+
+
+
+
+
+
+
+
+
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background: #0056b3;
+}
+.btnscroll1:hover{
+    background-color: rgb(0, 149, 255);
+    /* color: black; */
+    transition: all .5s ease-in-out;
+    border:none;
+
+}
+.btnscroll1{
+    padding: 1% 5%;
+    background-color: transparent;
+    color:white;
+    border:.5px solid white;
+    border-radius: 8px;
+}
+.btnscroll:hover{
+    transition: all .5s ease-in-out;
+    /* background-color: transparent; */
+    color:white;
+    background-color: rgb(0, 149, 255);
+    
+}
+
+.btnscroll{
+    border-radius: 8px;
+    padding: 1% 5%;
+    background-color: orange;
+    color:black;
+    border: none;
+    /* border:1px solid white; */
+}
+/* padding:'1% 5%', backgroundColor:'orange',color:"black", border:'none' */
+/* padding:'1% 5%', backgroundColor:'transparent',color:"white", border:'1px solid white' */
+/* Container for boxes */
+.boxes-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  width: 100%;
+  align-items: center;
+}
+
+.boxes-wrapper.show {
+  min-height: 250vh; 
+}
+.apply-now-btn{
+        display: flex;
+        gap: 5%;
+        padding-left: 5%;
+    }
+    /* display:'flex' ,gap:'5%' ,paddingLeft:'5%' */
+
+.box:hover {
+  transform: scale(1.05);
 }
