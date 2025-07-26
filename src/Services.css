@@ -396,12 +396,13 @@ body{
 @media (max-width: 768px) {
   .service-detail-section {
     margin-top: 20px !important;
-    height: auto !important;
-    max-height: 70vh;
+    height: 100% !important;
+    /* max-height: 70vh; */
     flex-direction: column !important;
     text-align: center !important;
     align-items: center !important;
-    padding: 20px 10px;
+    padding: 10px 10px !important;
+    flex-flow: column !important;
     gap: 20px;
   }
 
