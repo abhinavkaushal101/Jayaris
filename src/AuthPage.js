@@ -247,7 +247,7 @@ const AuthPage = () => {
           <>
             <h2 className="form-title">Login</h2>
             <input type="email" placeholder="Eg. coursecrates@gmail.com" id="login-email" className="glass-input" />
-            <input type="password" placeholder="Eg. coursecrates@gmail.com" id="login-password" className="glass-input" />
+            <input type="password" placeholder="Password" id="login-password" className="glass-input" />
             <button onClick={() => handleAuthAction("Login", {
               email: document.getElementById("login-email").value,
               password: document.getElementById("login-password").value

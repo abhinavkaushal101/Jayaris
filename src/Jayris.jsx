@@ -12,6 +12,7 @@ import './Jayris.css'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import image from './image/bg.mp4'
+import { Link } from 'react-router-dom';
 // import Team from 
 
 const Jayris = () => {
@@ -144,8 +145,8 @@ const Jayris = () => {
                                 </ul>
                             </div>
                             <div className='apply-now-btn'>
-                            <button className='btnscroll'><a href="/auth">Apply Now</a></button>
-                            <button className='btnscroll1'><a href="/">Learn more</a></button>
+                           <Link to='/auth' className='btnscroll'>Apply Now</Link>
+                           {/* <Link to='/' className='btnscroll1'>Learn more</Link>  */}
                             </div>
                         </motion.div>
 
@@ -185,8 +186,8 @@ const Jayris = () => {
                                 </ul>
                             </div>
                             <div className='apply-now-btn'>
-                            <button className='btnscroll'><a href="/auth">Apply Now</a></button>
-                            <button className='btnscroll1'><a href="/">Learn more</a></button>
+                           <Link to='/auth' className='btnscroll'>Apply Now</Link>
+                           {/* <Link to='/' className='btnscroll1'>Learn more</Link>  */}
                             </div>
                         </motion.div>
                     </div>
@@ -209,8 +210,8 @@ const Jayris = () => {
                                 </ul>
                             </div>
                             <div className='apply-now-btn'>
-                            <button className='btnscroll'><a href="/auth">Apply Now</a></button>
-                            <button className='btnscroll1'><a href="/">Learn more</a></button>
+                           <Link to='/auth' className='btnscroll'>Apply Now</Link>
+                           {/* <Link to='/' className='btnscroll1'>Learn more</Link>  */}
                             </div>
                         </motion.div>
 
@@ -248,14 +249,15 @@ const Jayris = () => {
                             <h1 className="internship-title">SEO & Digital Marketing</h1>
                             <div>
                                 <ul className="internship-list">
-                                    <li>SEO Intern (On-page, Off-page, Analytics)</li>
-                                    <li>Digital Marketing Intern (Google Ads, Meta Ads, Funnels)</li>
-                                    <li>Social Media Marketing Intern (Strategy, Content, Scheduling)</li>
+                                    <li>Business To Bussiness (b2B)</li>
+                                    {/* <li>SEO Intern (On-page, Off-page, Analytics)</li> */}
+                                    {/* <li>Digital Marketing Intern (Google Ads, Meta Ads, Funnels)</li> */}
+                                    {/* <li>Social Media Marketing Intern (Strategy, Content, Scheduling)</li> */}
                                 </ul>
                             </div>
                             <div className='apply-now-btn'>
-                            <button className='btnscroll'><a href="/auth">Apply Now</a></button>
-                            <button className='btnscroll1'><a href="/">Learn more</a></button>
+                           <Link to='/contact' className='btnscroll'>Contact</Link>
+                           {/* <Link to='/' className='btnscroll1'>Learn more</Link>  */}
                             </div>
                         </motion.div>
                     </div>
@@ -282,9 +284,9 @@ const Jayris = () => {
                                             <li>Security Compliance Intern (Policy & Best Practice Support)</li>
                                         </ul>
                                     </div>
-                                    <div className='apply-now-btn'>
-                            <button className='btnscroll'><a href="/auth">Apply Now</a></button>
-                            <button className='btnscroll1'><a href="/">Learn more</a></button>
+                                     <div className='apply-now-btn'>
+                           <Link to='/auth' className='btnscroll'>Apply Now</Link>
+                           {/* <Link to='/' className='btnscroll1'>Learn more</Link>  */}
                             </div>
                                 </motion.div>
 
@@ -318,9 +320,9 @@ const Jayris = () => {
                                             <li>Chatbot Development Intern (Dialogflow, RASA)</li>
                                         </ul>
                                     </div>
-                                    <div className='apply-now-btn'>
-                            <button className='btnscroll'><a href="/auth">Apply Now</a></button>
-                            <button className='btnscroll1'><a href="/">Learn more</a></button>
+                                     <div className='apply-now-btn'>
+                           <Link to='/auth' className='btnscroll'>Apply Now</Link>
+                           {/* <Link to='/' className='btnscroll1'>Learn more</Link>  */}
                             </div>
                                 </motion.div>
 
@@ -354,9 +356,9 @@ const Jayris = () => {
                                             <li>CMS Support Intern (Content Structuring & QA)</li>
                                         </ul>
                                     </div>
-                                    <div className='apply-now-btn'>
-                            <button className='btnscroll'><a href="/auth">Apply Now</a></button>
-                            <button className='btnscroll1'><a href="/">Learn more</a></button>
+                                   <div className='apply-now-btn'>
+                           <Link to='/auth' className='btnscroll'>Apply Now</Link>
+                           {/* <Link to='/' className='btnscroll1'>Learn more</Link>  */}
                             </div>
                                 </motion.div>
 
@@ -423,3 +425,10 @@ const Jayris = () => {
 }
 
 export default Jayris
+
+
+
+
+
+
+   

@@ -1,8 +1,10 @@
 /* src/components/Testimonial.css */
+
 .testimonial-glass-section {
   min-height: 100vh;
   padding: 5rem 2rem;
   position: relative;
+
 }
 
 .glass-message-box {
@@ -201,6 +203,46 @@
   padding: 0%;
   margin: 0%;
 }
+.hover-video-container{
+  max-height:250px  !important;
+}
+.hover-video{
+  object-fit: contain !important;
+  height: 100% !important;
+}
+.hover-video-container1{
+  max-height:350px  !important;
+  margin: 5% auto;
+
+}
+.testibox-container h1{
+  font-size:x-large;
+}
+.testibox-container p{
+  font-size: x-small;
+  /* width: 100% !important; */
+}
+.container-testing-text{
+  margin: 5% auto;
+  font-size: small;
+}
+.container-testing-text h1{
+  font-size:large;
+}
+.container-testing-text p{
+  font-size: xx-small;
+}
+.container-testing{
+  flex-direction: column;
+  width: 100% !important;
+}
+.testi-box-1{
+  width: 100% !important;
+  margin: 5% auto !important;
+}
+.content-hover-testi{
+  font-size: small !important;
+}
 }
 .quality-box img {
   width: 100%;
@@ -225,4 +267,147 @@
   .quality-location {
     font-size: 1.875rem;
   }
+ 
+}
+
+.testibox-container{
+  margin: 5% auto;
+  text-align: center;
+  width: 70%;
+}
+.testibox-container h1{
+  /* margin: 2% auto; */
+  padding: 2% 0%;
+}
+.testi-box{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+
+}
+.testi-box-1{
+
+  width: 80%;
+
+  
+  margin: 1% 2% 1% 2%;
+}
+.testi-wrapper{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.content-hover-testi{
+position: absolute;
+    top: 14%;
+    font-size: 3rem;
+    font-weight: 400 !important;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    color: #000;
+    width: 80%;
+}
+
+
+.container-testing{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0% auto;
+  
+  align-items: center;
+}
+.container-testing-text{
+  width: 100%;
+}
+.container-testing-image{
+  width: 80%;
+  /* margin-left: 10%; */
+  
+}
+.container-testing-image img{
+  width: 80%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.wrapper-testing-container{
+  padding: 5%;
+  margin-top: 5%;
+}
+.preview-image1{
+  /* width: 300px !important; */
+  
+}
+.hover-video-container1{
+  height: 450px;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background: #000;
+}
+
+.hover-video-container {
+  height: 450px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background: #000;
+}
+
+/* Image visible by default */
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Video hidden initially */
+.hover-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  background: #000;
+}
+
+.hover-video.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hover-video.hide {
+  opacity: 0;
+}
+
+/* Fullscreen Button */
+.fullscreen-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  z-index: 10;
+}
+
+.fullscreen-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
 }

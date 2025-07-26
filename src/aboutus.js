@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import missionImage from "./image/mission.jpeg";
 import visionImage from "./image/vision.jpeg";
+import Founder from "./image/Founder.JPG";
+
 
 const headingText = "Jayaris is where bold ideas meet seamless execution.";
 const description = `Empowering the Digital Future — One Solution at a Time.
@@ -59,11 +61,109 @@ const missionPoints = [
             </motion.p>
           </div>
         </div>
+    <br/>
+    <br/>
       </section>
-
       {/* Our Mission Section */}
 {/* Our Mission Section */}
 <section className="our-mission-section" id="our-mission">
+
+  
+  <motion.div
+    className="our-mission-container our-mission-container-separate"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.3 }}
+    variants={{
+      hidden: {},
+      visible: {
+        transition: {
+          staggerChildren: 0.3,
+        },
+      },
+    }}
+  >
+    <motion.div
+      className="mission-image mission-image-founder"
+      variants={{
+        hidden: { opacity: 0, x: 100 },
+        visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+      }}
+    >
+      <img src={Founder} alt="Mission Visual" />
+    </motion.div>
+
+    <motion.div
+      className="mission-content"
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+      }}
+    >
+      <motion.h2
+        className="mission-heading"
+        variants={{
+          hidden: { opacity: 0, y: 30 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+        }}
+      >
+       <span style={{color:'orange'}}>Amit Rathi</span> – Founder, Jayaris
+      </motion.h2>
+        <p>B. Com | Kolkata University</p>
+      <motion.p
+        className="mission-paragraph"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1, transition: { duration: 1 } },
+        }}
+      >
+       Jayaris was created to redefine digital excellence—bringing together global innovation and exceptional talent to craft transformative web and app solutions.
+      </motion.p>
+      <p style={{fontStyle:'italic'}}>“At Jayaris, we turn bold ideas into lasting digital impact.”</p>
+
+      {/* <motion.ul
+  className="mission-points"
+  initial="hidden"
+  whileInView="visible"
+  variants={{
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 1.0,
+      },
+    },
+  }}
+  viewport={{ once: true }}
+>
+  {[
+    'Bridging global gaps through tech',
+    'Delivering future-ready digital solutions',
+    'Elevating brands and streamlining operations',
+    'Leveraging India’s top tech talent',
+  ].map((point, index) => (
+    <motion.li
+      key={index}
+      variants={{
+        hidden: { opacity: 0, x: -30 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      transition={{ duration: 0.3 }}
+    >
+      {point}
+    </motion.li>
+  ))}
+</motion.ul> */}
+
+    </motion.div>
+  </motion.div>
+  
+</section>
+
+
+
+<section className="our-mission-section" id="our-mission">
+
+  
   <motion.div
     className="our-mission-container"
     initial="hidden"
@@ -116,17 +216,38 @@ const missionPoints = [
       </motion.p>
 
       <motion.ul
-        className="mission-points"
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { duration: 1 } },
-        }}
-      >
-        <li>🌐 Bridging global gaps through tech</li>
-        <li>🚀 Delivering future-ready digital solutions</li>
-        <li>🎯 Elevating brands and streamlining operations</li>
-        <li>💡 Leveraging India’s top tech talent</li>
-      </motion.ul>
+  className="mission-points"
+  initial="hidden"
+  whileInView="visible"
+  variants={{
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 1.0,
+      },
+    },
+  }}
+  viewport={{ once: true }}
+>
+  {[
+    'Bridging global gaps through tech',
+    'Delivering future-ready digital solutions',
+    'Elevating brands and streamlining operations',
+    'Leveraging India’s top tech talent',
+  ].map((point, index) => (
+    <motion.li
+      key={index}
+      variants={{
+        hidden: { opacity: 0, x: -30 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      transition={{ duration: 0.3 }}
+    >
+      {point}
+    </motion.li>
+  ))}
+</motion.ul>
+
     </motion.div>
   </motion.div>
 </section>
@@ -186,14 +307,14 @@ const missionPoints = [
         }}
         viewport={{ once: true }}
       >
-        {['🌍 Global reach', '🚀 Empowering creators', '💡 Redefining innovation', '🎯 Purpose-driven growth'].map((point, index) => (
+        {[' Global reach', ' Empowering creators', ' Redefining innovation', ' Purpose-driven growth'].map((point, index) => (
           <motion.li
             key={index}
             variants={{
               hidden: { opacity: 0, x: -30 },
               visible: { opacity: 1, x: 0 },
             }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
             {point}
           </motion.li>
@@ -216,12 +337,12 @@ const missionPoints = [
 
   <div className="zigzag-grid">
     {[
-      '🌟 Innovation',
-      '🏆 Excellence',
-      '⚡ Agility',
-      '🔍 Transparency',
-      '🌐 Global Thinking',
-      '🤝 Integrity',
+      ' Innovation',
+      ' Excellence',
+      ' Agility',
+      ' Transparency',
+      ' Global Thinking',
+      ' Integrity',
     ].map((value, index) => (
       <motion.div
         className="value-card"

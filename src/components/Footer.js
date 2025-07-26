@@ -96,7 +96,7 @@ const Footer = () => {
             <h5 className="footer-heading">Contact Info</h5>
             <ul className="list-unstyled footer-contact-info">
               <li>Email: <a href="mailto:support@jayaris.com">infojayaris@outlook.com</a></li>
-              <li>Location: Madhya Pradesh, India</li>
+              <li>Location: Indore, Madhya Pradesh (India)</li>
               {/* <li>Phone: +91-9981442233 / +91-8516998877</li> */}
             </ul>
           </Col>

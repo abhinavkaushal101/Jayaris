@@ -3,7 +3,16 @@ body, html {
   overflow-x: hidden; /* Crucial: Prevents horizontal scrolling on the entire page */
   width: 100vw; /* Ensures they take exactly 100% viewport width */
 }
-
+.lang-icon {
+  font-size: 1.2rem; 
+  vertical-align: middle;
+  font-size: 1.4rem;
+  margin-right: 0 !important; 
+}
+.language-toggle {
+  gap: 0.0005rem !important;
+  padding: 0.25rem 0.5rem !important; 
+}
 /* Navbar styles (keep existing desktop styles as they are) */
 .glass-navbar {
   background-color: #021024d5 !important;
@@ -36,7 +45,8 @@ body, html {
     #fcb900,  
     #ff5722   
   ); */
-  background: linear-gradient(#F49A0C);
+  /* background: linear-gradient(#F49A0C); */
+  background-color: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; 
@@ -85,6 +95,9 @@ body, html {
   font-weight: 600;
   color: #c0c0ff !important;
   padding-bottom: 4px; /* reduce if too much */
+}
+.dropdown-toggle::after{
+  display: none !important;
 }
 
 .navbar .nav-link.active::after {
