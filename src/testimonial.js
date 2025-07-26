@@ -23,9 +23,8 @@ import client2 from './image/client2.jpeg';
 import client3 from './image/client3.jpeg';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import Slider from './Slider'
+
 import Carousel from './HorizontalSlider';
-import HoverVideoGrid from './HoverGrid';
 import HoverVideoCard from './HoverVideoCard';
 // import HorizontalSlider from './Slider';
 
@@ -232,7 +231,7 @@ const Testimonial = () => {
           {/* <div className='testi-right'>
             <h1>WE PROVIDE QUALITY</h1>
           </div> */}
-           <HoverVideoCard img="https://static.wixstatic.com/media/11062b_4c10b593035143bda767c755c09bb406~mv2.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain.jpg" video={video04} title="Card 1" />
+           <HoverVideoCard img="https://static.wixstatic.com/media/11062b_4c10b593035143bda767c755c09bb406~mv2.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain.jpg" video={vide} title="Card 1" />
         </div>
       </div>
 

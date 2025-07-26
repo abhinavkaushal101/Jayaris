@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import vide from './image/vide.mp4';
-import vide from './image/Testimonialvideo/vide.mp4';
+
 import video06 from './image/Testimonialvideo/video06.mp4'
 import video07 from './image/Testimonialvideo/video07.mp4'
 import video08 from './image/Testimonialvideo/video08.mp4'
@@ -14,6 +14,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import './HorizontalSlider.css';
+
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
