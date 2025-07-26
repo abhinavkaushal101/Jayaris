@@ -154,7 +154,7 @@ const Testimonial = () => {
           {/* <div className='testi-right'>
             <h1>WE PROVIDE QUALITY</h1>
           </div> */}
-           <HoverVideoCard img="https://cdn.pixabay.com/photo/2019/08/28/19/10/binary-code-4437421_1280.jpg" video={video06} title="Card 1" />
+           <HoverVideoCard img="https://cdn.pixabay.com/photo/2019/08/28/19/10/binary-code-4437421_1280.jpg" video={video06} title="Hover" />
         </div>
       </div>
 
@@ -163,7 +163,7 @@ const Testimonial = () => {
           {/* <div className='testi-right'>
             <h1>WE PROVIDE QUALITY</h1>
           </div> */}
-           <HoverVideoCard img="https://cdn.pixabay.com/photo/2017/03/23/09/34/artificial-intelligence-2167835_1280.jpg" video={video07} title="Card 1" />
+           <HoverVideoCard img="https://cdn.pixabay.com/photo/2017/03/23/09/34/artificial-intelligence-2167835_1280.jpg" video={video07} title="Hover" />
         </div>
         <div className='container-testing-text'>
           <h1>Travel & Hospitality</h1>
@@ -180,7 +180,7 @@ const Testimonial = () => {
           {/* <div className='testi-right'>
             <h1>WE PROVIDE QUALITY</h1>
           </div> */}
-           <HoverVideoCard img="https://cdn.pixabay.com/photo/2018/12/14/23/57/web-3876081_1280.jpg" video={video01} title="Card 1" />
+           <HoverVideoCard img="https://cdn.pixabay.com/photo/2018/12/14/23/57/web-3876081_1280.jpg" video={video01} title="Hover" />
         </div>
       </div>
        <div className='container-testing'>
@@ -188,7 +188,7 @@ const Testimonial = () => {
           {/* <div className='testi-right'>
             <h1>WE PROVIDE QUALITY</h1>
           </div> */}
-          <HoverVideoCard img="https://cdn.pixabay.com/photo/2023/07/10/13/51/spider-8118409_1280.jpg" video={video04} title="Card 1" />
+          <HoverVideoCard img="https://cdn.pixabay.com/photo/2023/07/10/13/51/spider-8118409_1280.jpg" video={video04} title="Hover" />
         </div>
          <div className='container-testing-text'>
           <h1>Business & Corporate</h1>
@@ -204,7 +204,7 @@ const Testimonial = () => {
           {/* <div className='testi-right'>
             <h1>WE PROVIDE QUALITY</h1>
           </div> */}
-           <HoverVideoCard img="https://cdn.pixabay.com/photo/2024/04/05/05/17/technology-8676553_1280.jpg" video={video05} title="Card 1" />
+           <HoverVideoCard img="https://cdn.pixabay.com/photo/2024/04/05/05/17/technology-8676553_1280.jpg" video={video05} title="Hover" />
         </div>
       </div>
 
@@ -213,7 +213,7 @@ const Testimonial = () => {
           {/* <div className='testi-right'>
             <h1>WE PROVIDE QUALITY</h1>
           </div> */}
-           <HoverVideoCard img="https://cdn.pixabay.com/photo/2021/01/31/07/28/twigs-5966086_1280.jpg" video={video08} title="Card 1" />
+           <HoverVideoCard img="https://cdn.pixabay.com/photo/2021/01/31/07/28/twigs-5966086_1280.jpg" video={video08} title="Hover" />
         </div>
         <div className='container-testing-text'>
           <h1>Technology & Tools</h1>
@@ -231,7 +231,7 @@ const Testimonial = () => {
           {/* <div className='testi-right'>
             <h1>WE PROVIDE QUALITY</h1>
           </div> */}
-           <HoverVideoCard img="https://static.wixstatic.com/media/11062b_4c10b593035143bda767c755c09bb406~mv2.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain.jpg" video={vide} title="Card 1" />
+           <HoverVideoCard img="https://static.wixstatic.com/media/11062b_4c10b593035143bda767c755c09bb406~mv2.jpg/v1/fill/w_414,h_527,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mountain.jpg" video={vide} title="Hover" />
         </div>
       </div>
 
@@ -240,7 +240,7 @@ const Testimonial = () => {
           {/* <div className='testi-right'>
             <h1>WE PROVIDE QUALITY</h1>
           </div> */}
-           <HoverVideoCard img="https://cdn.pixabay.com/photo/2015/01/01/21/56/web-586177_1280.jpg" video={video03} title="Card 1" />
+           <HoverVideoCard img="https://cdn.pixabay.com/photo/2015/01/01/21/56/web-586177_1280.jpg" video={video03} title="Hover" />
         </div>
         <div className='container-testing-text'>
           <h1>Business & Corporate</h1>
