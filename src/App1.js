@@ -28,7 +28,8 @@ import TermsAndConditions from './components/TermsAndConditions';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import CookiePolicy from './components/CookiePolicy';
 import image from './image/bg.mp4'
-
+import Blog from './components/Blog.js'
+import Blog_Content from "./Blog_content.js";
 const points = ["Global Delivery", "Top Talent", "Agile Execution", "Post-Delivery Support"];
 
 const feedbackList = [
@@ -326,9 +327,9 @@ const cardVariants = {
   ))}
 </motion.div>
 
+<Blog/>
   </div>
 </section>
-
 
 {/* Testimonial Section */}
 <motion.section className="testimonial-glass-section" id="testimonials">
@@ -403,6 +404,8 @@ export default function App1() {
       <Route path="/cookie-policy" element={<CookiePolicy />} />
       <Route path="/blog" element={<AboutUs />} />
       <Route path="/sitemap" element={<Services />} />
+      <Route path="/blog/:BlogContent" element={<Blog_Content />} />
+
     </Routes>
     </>
   );

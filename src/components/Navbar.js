@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Container, Nav, Button, Dropdown, Navbar as BootstrapNavbar } from "react-bootstrap";
 import "./Navbar.css";
 import { Link, NavLink } from 'react-router-dom';
-import logoImage from '../image/logo.png';
+import logoImage from '../image/updatelogo.png';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Navbar() {

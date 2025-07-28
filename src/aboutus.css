@@ -67,7 +67,7 @@
 z-index: 100;
 }
 .mission-image-founder img{
-  height: 450px;
+  height: 380px;
 }
 .our-mission-section {
   height: 85vh !important;
@@ -318,12 +318,16 @@ z-index: 100;
     gap: 30px;
     text-align: center;
     align-items: center;
+    /* height: 100% !important; */
   }
 
   .mission-image img,
   .vision-image img {
     max-width: 100%;
     width: 90%;
+  }
+  .mission-image-founder img{
+    height: 150px !important;
   }
 
   .mission-paragraph,
@@ -370,6 +374,7 @@ z-index: 100;
   .our-mission-section,
   .our-vision-section {
     padding: 60px 20px;
+            height: 100% !important;
   }
 }
 
