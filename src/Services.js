@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Tilt from "react-parallax-tilt";
@@ -268,6 +267,15 @@ const scrollToSection = (index) => {
         <h2 className="services-heading">Expert Services We Offer</h2>
         <div className="carousel-viewport" ref={carouselViewportRef}>
           <div className="carousel-3d-container">
+            <div className="carousel-nav-arrows-edges">
+              <button className="btn left-arrow" onClick={() => handleSwipe("right")}>
+                &#8592;
+              </button>
+              <button className="btn right-arrow" onClick={() => handleSwipe("left")}>
+                &#8594;
+              </button>
+            </div>
+
             <motion.div className="carousel-track" ref={carouselTrackRef}>
               {displayItems.map((service, index) => {
                 const transforms = getCardTransforms(index);

@@ -166,6 +166,46 @@ body{
   font-weight: 600;
 }
 
+.carousel-nav-arrows-edges {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  margin: 0px 10px;
+  justify-content: space-between;
+  padding: 0 20px; /* Remove horizontal padding */
+  pointer-events: none; /* Let content behind be clickable */
+}
+
+.carousel-nav-arrows-edges .btn {
+  pointer-events: auto;
+  background-color: rgba(255, 255, 255, 0.536);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgb(12, 3, 42);
+  font-size: 2rem;
+  z-index: 1000 !important;
+  /* border-radius: 50%; */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* backdrop-filter: blur(8px); */
+  padding: 4px 10px; /* smaller button size */
+  margin: 0 26px;  
+}
+
+.carousel-nav-arrows-edges .btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 1000px) {
+  .carousel-nav-arrows-edges {
+    top: 43%; /* Move slightly upward */
+    transform: translateY(-50%);
+  }
+}
+
+
 /* Adjustments for screens up to 992px wide (Tablets in landscape, small desktops) */
 @media (max-width: 992px) {
   .services-carousel-section {
@@ -212,9 +252,7 @@ body{
   .service-description p {
     font-size: 0.9rem;
   }
-  .carousel-nav-arrows {
-    margin-top: 5px;
-  }
+ 
 }
 
 /* Adjustments for screens up to 768px wide (Tablets in portrait, larger phones) */
@@ -261,11 +299,7 @@ body{
   .service-description p {
     font-size: 0.85rem;
   }
-  .carousel-nav-arrows {
-    margin-top: 5px;
-    gap: 8px;
-    margin-bottom: 30px;
-  }
+
 }
 
 /* Adjustments for screens up to 576px wide (Most phones) */
@@ -393,6 +427,18 @@ body{
 .service-image{
   width: 60%;
 }
+
+
+
+
+
+
+
+
+
+
+
+ 
 @media (max-width: 768px) {
   .service-detail-section {
     margin-top: 20px !important;
@@ -405,6 +451,7 @@ body{
     flex-flow: column !important;
     gap: 20px;
   }
+ 
 
   .service-detail-section img {
     margin-left: 0 !important;
@@ -432,4 +479,70 @@ body{
     padding: 10px 20px;
     margin-top: 10px;
   }
+}
+
+
+@media (max-width: 768px) {
+  
+  
+  .carousel-nav-arrows-edges {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 -120px !important;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    transform: scale(0.6);
+    transform-origin: center;
+    padding: 0 !important;
+    pointer-events: none;
+  }
+  .carousel-nav-arrows-edges .btn {
+    pointer-events: auto;
+    font-size: 1.6rem;
+    width: 47px !important;      /* Increase button width */
+    height: 47px !important;     /* Increase button height */
+    padding: 6px 8px; 
+    /* margin: 0; */
+    /* margin: 0 -50px; */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgb(12, 3, 42);
+    border-radius: 50%;
+    /* backdrop-filter: blur(8px); */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .carousel-nav-arrows-edges .btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-nav-arrows-edges {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 -120px !important;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    padding: 0 !important;
+  }
+
+
+  .carousel-nav-arrows-edges .btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  
 }
