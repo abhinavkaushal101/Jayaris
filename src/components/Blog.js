@@ -16,7 +16,7 @@ import "swiper/css/pagination";
 import "./Blog.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 const Blog_Data = [
@@ -52,8 +52,7 @@ const Blog_Data = [
   {
     id: 4,
     img: "https://jayarissolution.wordpress.com/wp-content/uploads/2025/07/jayaris.png?w=1024",
-    title:
-      "The Future of Web & App Development: Why Techies ...",
+    title: "The Future of Web & App Development: Why Techies ...",
 
     description: `Hello Techies, In today’s digital-first world, web and app development is no longer just about coding—it’s about...`,
   },
@@ -108,11 +107,15 @@ export default function Blog() {
             spaceBetween: 30,
           },
         }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         // pagination={{
         //   clickable: true,
         // }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Autoplay, Navigation]}
         className="mySwiper"
       >
         {Blog_Data.map((data, index) => (
@@ -121,13 +124,12 @@ export default function Blog() {
               <img src={data.img} />
             </div>
             <div className="title-description">
-              
-                <h1>{data.title}</h1>
-                <p>{data.description}</p>
+              <h1>{data.title}</h1>
+              <p>{data.description}</p>
               {/* <div> */}
-                <Link className="Readmore_btn" to={`/blog/${data.id}`}>
-                  Read
-                </Link>
+              <Link className="Readmore_btn" to={`/blog/${data.id}`}>
+                Read
+              </Link>
               {/* </div> */}
             </div>
           </SwiperSlide>

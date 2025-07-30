@@ -327,7 +327,10 @@ z-index: 100;
     width: 90%;
   }
   .mission-image-founder img{
-    height: 150px !important;
+    height: 200px !important;
+    width: 200px !important;
+    object-fit: cover;
+    object-position: top;
   }
 
   .mission-paragraph,

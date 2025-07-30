@@ -6,6 +6,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import video06 from './image/Testimonialvideo/video06.mp4'
 import video07 from './image/Testimonialvideo/video07.mp4'
 import video08 from './image/Testimonialvideo/video08.mp4'
+import img01 from './image/testiimages/01.jpeg'
+import img02 from './image/testiimages/02.jpeg'
+import img03 from './image/testiimages/03.jpeg'
 
 import HoverVideoCard from './HoverVideoCard';
 
@@ -17,7 +20,7 @@ import './HorizontalSlider.css';
 
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination,Autoplay, Navigation } from 'swiper/modules';
 
 export default function Carousel() {
 
@@ -69,16 +72,20 @@ export default function Carousel() {
             spaceBetween: 50,
           },
         }}
+        autoplay={{
+          delay:3000,
+          disableOnInteraction:false,
+        }}
         // pagination={{
         //   clickable: true,
         // }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Autoplay,Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><HoverVideoCard img='https://images.pexels.com/photos/804269/pexels-photo-804269.jpeg' video={video07} title="WE" /></SwiperSlide>
-        <SwiperSlide> <HoverVideoCard img="https://images.pexels.com/photos/13190042/pexels-photo-13190042.jpeg" video={video08} title="Provide" /></SwiperSlide>
-        <SwiperSlide><HoverVideoCard img='https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg' video={video06} title="Quality" /></SwiperSlide>
+        <SwiperSlide><HoverVideoCard img={img01} video={video07} title="WE" /></SwiperSlide>
+        <SwiperSlide> <HoverVideoCard img={img02} video={video08} title="Provide" /></SwiperSlide>
+        <SwiperSlide><HoverVideoCard img={img03} video={video06} title="Quality" /></SwiperSlide>
       
       </Swiper>
     </>
