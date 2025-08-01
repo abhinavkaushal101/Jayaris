@@ -9,6 +9,10 @@ body, html {
   font-size: 1.4rem;
   margin-right: 0 !important; 
 }
+.Toggle-white{
+  color: white !important;
+  background-color: white;
+}
 .language-toggle {
   gap: 0.0005rem !important;
   padding: 0.25rem 0.5rem !important; 
@@ -230,52 +234,61 @@ body, html {
   }
   /* --- Styles for Navbar Toggler (Hamburger / Close Button) --- */
 
+
+/* Override Bootstrap's default toggler icon with white lines */
+.custom-toggle .navbar-toggler-icon {
+  background-image: none; /* Remove Bootstrap default */
+  width: 30px;
+  height: 22px;
+  z-index: 100002;
+  position: relative;
+  display: inline-block;
+}
+
+.custom-toggle .navbar-toggler-icon::before,
+.custom-toggle .navbar-toggler-icon::after,
+.custom-toggle .navbar-toggler-icon div {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.custom-toggle .navbar-toggler-icon::before {
+  top: 0;
+}
+
+.custom-toggle .navbar-toggler-icon div {
+  top: 10px;
+  left: 50%;
+}
+
+.custom-toggle .navbar-toggler-icon::after {
+  bottom: 0;
+}
+
+/* Optional: transform into X */
+.custom-toggle.open .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.custom-toggle.open .navbar-toggler-icon div {
+  opacity: 0;
+}
+
+.custom-toggle.open .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+
+
+
+
   /* Basic styling for the toggler button itself to ensure visibility */
-  .navbar-toggler { 
-    background-color: transparent !important; /* Ensure no conflicting background */
-    padding: 0.25rem 0.75rem !important; /* Standard Bootstrap padding */
-    z-index: 100002 !important; /* Ensure it's on top of other content when navbar is open */
-    display: flex !important; /* Make it a flex container to center the icon */
-    align-items: center !important; /* Center icon vertically */
-    justify-content: center !important; /* Center icon horizontally */
-  }
-
-  /* Style for the hamburger icon lines within the toggler (when collapsed) */
-  .navbar-toggler-icon {
-    /* Explicitly make the SVG white and ensure it's visible */
-    width: 1.5em;
-    height: 1.5em;
-    position: relative !important; /* Crucial for positioning pseudo-elements */
-    display: inline-block !important; /* Ensures pseudo-elements behave correctly */
-  }
-
-  /* When the navbar is expanded (the toggler button gets aria-expanded="true") */
-  .navbar-toggler[aria-expanded="true"] {
-    background-color: white !important; /* Ensure no background when open */
-  }
-
-  /* Transform the hamburger icon into an 'X' when the navbar is expanded */
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    background-color: white !important; /* FORCE REMOVE ALL background properties (image, color etc.) */
-    position: relative !important; /* Re-affirm positioning context */
-    display: inline-block !important; /* Re-affirm display for pseudo-elements */
-    width: 1.5em !important;
-    height: 1.5em !important;
-  }
-
-  /* Create the two lines for the 'X' using pseudo-elements */
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
-    content: '';
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 0;
-    width: 100%;
-    height: 2px; /* Thickness of the lines */
-    background-color: white !important;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for the rotation */
-  }
-  .glass-navbar .dropdown-menu {
+   .glass-navbar .dropdown-menu {
     position: absolute !important;
     left: 0 !important; /* Align to the left of the button */
     right: auto !important;
