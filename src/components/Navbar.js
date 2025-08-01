@@ -42,7 +42,11 @@ function Navbar() {
             <span className="jayaris-gradient-text">JAYARIS</span>
           </BootstrapNavbar.Brand>
 
-          <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" /> {/* Keep this as is */}
+          {/* <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" />  */}
+<BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" className={`custom-toggle ${expanded ? 'open' : ''}`} children={
+    <span className="navbar-toggler-icon">
+      <div></div>
+    </span>} />
 
           <BootstrapNavbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
@@ -50,7 +54,7 @@ function Navbar() {
               <Nav.Link as={NavLink} to="/" end onClick={handleNavLinkClick}>Home</Nav.Link>
               <Nav.Link as={NavLink} to="/about" onClick={handleNavLinkClick}>About</Nav.Link>
               <Nav.Link as={NavLink} to="/services" onClick={handleNavLinkClick}>Services</Nav.Link>
-              <Nav.Link as={NavLink} to="/testimonials" onClick={handleNavLinkClick}>Testimonials</Nav.Link>
+              <Nav.Link as={NavLink} to="/testimonials" onClick={handleNavLinkClick}>Our work</Nav.Link>
               <Nav.Link as={NavLink} to="/career" onClick={handleNavLinkClick}>Career</Nav.Link>
               <Nav.Link as={NavLink} to="/contact" onClick={handleNavLinkClick}>Contact Us</Nav.Link>
             </Nav>
